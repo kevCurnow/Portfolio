@@ -24,24 +24,22 @@ header {
 Navbar Section
 --------------------------------*/
 #main-nav {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: none;
-  background: transparent; }
-  #main-nav:hover {
-    background: transparent; }
+  background: #001c31; }
   #main-nav .icon-bar {
     width: 22px;
     left: 3px;
     transition: all 2.2s;
     position: relative; }
     #main-nav .icon-bar:nth-child(2) {
-      transform: rotate(45deg);
+      transform: rotate(0);
       transform-origin: 10% 10%; }
     #main-nav .icon-bar:nth-child(3) {
-      opacity: 0; }
+      opacity: 1; }
     #main-nav .icon-bar:nth-child(4) {
-      transform: rotate(-45deg);
+      transform: rotate(0);
       transform-origin: 10% 90%; }
   #main-nav.collapsed .icon-bar {
     left: 0; }
@@ -52,9 +50,38 @@ Navbar Section
     #main-nav.collapsed .icon-bar:nth-child(4) {
       transform: rotate(0); }
 
+.navbar-custom {
+  background-color: #001c31;
+  color: #82929F;
+  border-radius: 0; }
+
+.navbar-custom .navbar-nav > li > a {
+  color: #82929F; }
+
+.navbar-custom .navbar-nav > .active > a {
+  color: #82929F;
+  background-color: transparent; }
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open > a {
+  text-decoration: none;
+  background-color: #eeeeee; }
+
+.navbar-custom .navbar-brand {
+  color: #82929F; }
+
+.navbar-custom .navbar-toggle {
+  background-color: #82929F; }
+
+.navbar-custom .icon-bar {
+  background-color: #001c31; }
+
 /* CSS code for the Header section. */
 .jumbotron {
-  background: url("http://eleven50.wpengine.com/wp-content/uploads/2017/03/Learning-to-Code5.png?id=21797") no-repeat center center;
+  background-image: url("assets/img/wood.jpg") no-repeat center center;
   padding-top: 8rem;
   padding-bottom: 8rem; }
 

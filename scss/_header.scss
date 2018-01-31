@@ -1,6 +1,6 @@
 /* CSS code for the Header section. */
 .jumbotron {
-    background-image: url('assets/img/wood.jpg') no-repeat center center;
+    background: url("https://i.imgur.com/85aKb8P.jpg")  center center;
     padding-top: 8rem;
     padding-bottom: 8rem;
 }
@@ -8,6 +8,7 @@
 .jumbotron-heading {
     padding-top: 50px;
     font-weight: 400;
+    color: #ffffff;
 }
 
 .jumbotron .container {

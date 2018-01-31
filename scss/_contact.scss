@@ -1,5 +1,4 @@
 /* CSS code for the Contact section. */
-
 #contact {
     margin: 50px;
 }
@@ -10,6 +9,7 @@
 
 #contact .social-links a {
     font-size: 18px;
+    margin: 20px;
     display: inline-block;
     background: $gray;
     color: #fff;
@@ -23,7 +23,47 @@
 }
   
 #contact .social-links a:hover {
-    background: $green;
+    background: #2f0601;
     color: #fff;
 }
+
+@media (max-width: 991px) {
+#container {
+    margin: auto;
+}
+
+#contact {
+    margin: 50px;
+}
   
+#contact .social-links ul {
+    list-style: none;
+    display: inline;
+    margin: auto;
+}
+
+#contact .social-links li {
+    float: left;
+}
+
+#contact .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    background: $gray;
+    color: #fff;
+    line-height: 1;
+    padding: 12px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    position: relative;
+}
+  
+#contact .social-links a:hover {
+    background: #2f0601;
+    color: #fff;
+}
+}  

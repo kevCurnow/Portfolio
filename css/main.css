@@ -81,13 +81,14 @@ Navbar Section
 
 /* CSS code for the Header section. */
 .jumbotron {
-  background-image: url("assets/img/wood.jpg") no-repeat center center;
+  background: url("https://i.imgur.com/85aKb8P.jpg") center center;
   padding-top: 8rem;
   padding-bottom: 8rem; }
 
 .jumbotron-heading {
   padding-top: 50px;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #ffffff; }
 
 .jumbotron .container {
   max-width: 60rem; }
@@ -161,8 +162,9 @@ Portfolio Section
 About Section
 ****************************/
 #about {
-  background: url("../assets/logo/blue-green-bg.jpg") no-repeat center center;
-  font-size: 18px; }
+  background: url("https://i.imgur.com/57j42rX.jpg") center center;
+  font-size: 18px;
+  color: #8f8f8f; }
 
 .about-panel {
   visibility: visible;
@@ -179,6 +181,7 @@ About Section
 
 #contact .social-links a {
   font-size: 18px;
+  margin: 20px;
   display: inline-block;
   background: #53565A;
   color: #fff;
@@ -191,16 +194,45 @@ About Section
   transition: 0.3s; }
 
 #contact .social-links a:hover {
-  background: #8acfba;
+  background: #2f0601;
   color: #fff; }
+
+@media (max-width: 991px) {
+  #container {
+    margin: auto; }
+  #contact {
+    margin: 50px; }
+  #contact .social-links ul {
+    list-style: none;
+    display: inline;
+    margin: auto; }
+  #contact .social-links li {
+    float: left; }
+  #contact .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    background: #53565A;
+    color: #fff;
+    line-height: 1;
+    padding: 12px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    position: relative; }
+  #contact .social-links a:hover {
+    background: #2f0601;
+    color: #fff; } }
 
 /* CSS code for the Footer section. */
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #D9514E;
+  background-color: #001c31;
   font-size: 18px;
-  color: #8acfba; }
+  color: #82929f; }
 
 footer p {
   margin-bottom: .25rem; }

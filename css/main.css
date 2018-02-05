@@ -24,24 +24,22 @@ header {
 Navbar Section
 --------------------------------*/
 #main-nav {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: none;
-  background: transparent; }
-  #main-nav:hover {
-    background: transparent; }
+  background: #001c31; }
   #main-nav .icon-bar {
     width: 22px;
     left: 3px;
     transition: all 2.2s;
     position: relative; }
     #main-nav .icon-bar:nth-child(2) {
-      transform: rotate(45deg);
+      transform: rotate(0);
       transform-origin: 10% 10%; }
     #main-nav .icon-bar:nth-child(3) {
-      opacity: 0; }
+      opacity: 1; }
     #main-nav .icon-bar:nth-child(4) {
-      transform: rotate(-45deg);
+      transform: rotate(0);
       transform-origin: 10% 90%; }
   #main-nav.collapsed .icon-bar {
     left: 0; }
@@ -52,15 +50,45 @@ Navbar Section
     #main-nav.collapsed .icon-bar:nth-child(4) {
       transform: rotate(0); }
 
+.navbar-custom {
+  background-color: #001c31;
+  color: #82929F;
+  border-radius: 0; }
+
+.navbar-custom .navbar-nav > li > a {
+  color: #82929F; }
+
+.navbar-custom .navbar-nav > .active > a {
+  color: #82929F;
+  background-color: transparent; }
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open > a {
+  text-decoration: none;
+  background-color: #eeeeee; }
+
+.navbar-custom .navbar-brand {
+  color: #82929F; }
+
+.navbar-custom .navbar-toggle {
+  background-color: #82929F; }
+
+.navbar-custom .icon-bar {
+  background-color: #001c31; }
+
 /* CSS code for the Header section. */
 .jumbotron {
-  background: url("http://eleven50.wpengine.com/wp-content/uploads/2017/03/Learning-to-Code5.png?id=21797") no-repeat center center;
+  background: url("https://i.imgur.com/85aKb8P.jpg") center center;
   padding-top: 8rem;
   padding-bottom: 8rem; }
 
 .jumbotron-heading {
   padding-top: 50px;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #ffffff; }
 
 .jumbotron .container {
   max-width: 60rem; }
@@ -134,8 +162,9 @@ Portfolio Section
 About Section
 ****************************/
 #about {
-  background: url("../assets/logo/blue-green-bg.jpg") no-repeat center center;
-  font-size: 18px; }
+  background: url("https://i.imgur.com/57j42rX.jpg") center center;
+  font-size: 18px;
+  color: #8f8f8f; }
 
 .about-panel {
   visibility: visible;
@@ -152,6 +181,7 @@ About Section
 
 #contact .social-links a {
   font-size: 18px;
+  margin: 20px;
   display: inline-block;
   background: #53565A;
   color: #fff;
@@ -164,16 +194,45 @@ About Section
   transition: 0.3s; }
 
 #contact .social-links a:hover {
-  background: #8acfba;
+  background: #2f0601;
   color: #fff; }
+
+@media (max-width: 991px) {
+  #container {
+    margin: auto; }
+  #contact {
+    margin: 50px; }
+  #contact .social-links ul {
+    list-style: none;
+    display: inline;
+    margin: auto; }
+  #contact .social-links li {
+    float: left; }
+  #contact .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    background: #53565A;
+    color: #fff;
+    line-height: 1;
+    padding: 12px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    position: relative; }
+  #contact .social-links a:hover {
+    background: #2f0601;
+    color: #fff; } }
 
 /* CSS code for the Footer section. */
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #D9514E;
+  background-color: #001c31;
   font-size: 18px;
-  color: #8acfba; }
+  color: #82929f; }
 
 footer p {
   margin-bottom: .25rem; }

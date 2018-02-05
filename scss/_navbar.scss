@@ -2,14 +2,14 @@
 Navbar Section
 --------------------------------*/
 #main-nav {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: none;
-    background: transparent;
+    background: $darkblue;
 
-    &:hover {
-        background: transparent;
-    }
+    // &:hover {
+    //     background: transparent;
+    // }
 
     .icon-bar {
         width: 22px;
@@ -18,20 +18,20 @@ Navbar Section
       position: relative;
 
       &:nth-child(2) {
-        transform: rotate(45deg);
+        transform: rotate(0);
         transform-origin: 10% 10%;
       }
       &:nth-child(3) {
-        opacity: 0;
+        opacity: 1;
       }
       &:nth-child(4) {
-        transform: rotate(-45deg);
+        transform: rotate(0);
         transform-origin: 10% 90%;
       }
     }
 
     &.collapsed {
-
+      
       .icon-bar {
         left: 0;
 
@@ -46,6 +46,38 @@ Navbar Section
         }
        }
     }
-}
+  }
+    .navbar-custom {
+      background-color: #001c31;
+      color: #82929F;
+      border-radius: 0;
+    }
+    
+    .navbar-custom .navbar-nav > li > a {
+      color: #82929F;
+    }
+    
+    .navbar-custom .navbar-nav > .active > a {
+      color: #82929F;
+      background-color: transparent;
+    }
+
+    .navbar-custom .navbar-nav > li > a:hover,
+    .navbar-custom .navbar-nav > li > a:focus,
+    .navbar-custom .navbar-nav > .active > a:hover,
+    .navbar-custom .navbar-nav > .active > a:focus,
+    .navbar-custom .navbar-nav > .open >a {
+      text-decoration: none;
+      background-color: #eeeeee;
+    }
+    .navbar-custom .navbar-brand {
+      color:#82929F;
+    }
+    .navbar-custom .navbar-toggle {
+      background-color:#82929F;
+    }
+    .navbar-custom .icon-bar {
+      background-color:#001c31;
+    }
 
  

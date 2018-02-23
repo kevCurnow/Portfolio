@@ -200,6 +200,14 @@ About Section
   background: #2f0601;
   color: #fff; }
 
+#contact .btn-lg {
+  background: #53565A;
+  color: #fff; }
+
+#contact .btn-lg:hover {
+  background: #2f0601;
+  color: #fff; }
+
 @media (max-width: 991px) {
   #container {
     margin: auto; }
@@ -226,6 +234,12 @@ About Section
     transition: 0.3s;
     position: relative; }
   #contact .social-links a:hover {
+    background: #2f0601;
+    color: #fff; }
+  #contact .btn-lg {
+    background: #53565A;
+    color: #fff; }
+  #contact .btn-lg:hover {
     background: #2f0601;
     color: #fff; } }
 
